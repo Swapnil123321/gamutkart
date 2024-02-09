@@ -27,7 +27,7 @@ pipeline {
 
 	stage('Deployment'){ 
 		steps { 
-			sh 'sshpass -p staragile scp target/gamutkart.war staragile@172.31.15.55:/home/staragile/apache-tomcat-9.0.85/webapps/' 
+			sh 'sshpass -p 12345678 scp target/gamutkart.war staragile@172.31.15.55:/home/staragile/apache-tomcat-9.0.85/webapps/' 
 		}
     	}
     }
