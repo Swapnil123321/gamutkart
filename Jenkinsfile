@@ -7,6 +7,11 @@ pipeline {
 	        	checkout scm
 	    	}
         }
+	stage ('Compile'){
+	        steps {
+			sh 'mvn compile'
+                }
+	}
 	 stage ('Build'){
 	        steps {
 			sh 'mvn clean install'
